@@ -1,0 +1,5 @@
+.env
+# Ignorar directorio de entorno virtual
+venv/
+.venv/
+entorno/
