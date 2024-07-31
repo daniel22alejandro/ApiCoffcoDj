@@ -4,7 +4,7 @@ from rest_framework import serializers
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username','first_name','last_name','email','password']
+        fields = ['id','username','first_name','last_name','email','password','rol',"tipo_documento",'numero_documento']
 
     def create(self, validated_data):
         password = validated_data.pop('password', 'None')
@@ -13,14 +13,15 @@ class UserSerializer(serializers.ModelSerializer):
             inistance.set_password(password)
         inistance.save()
         return inistance
-class UserSerializer(serializers.ModelSerializer):
+class UserGetSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username','first_name','last_name','email']
+        fields = ['id','username','first_name','last_name','email','password','rol',"tipo_documento",'numero_documento']
 
         
 class UserUpdate(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['username','first_name']
+
 
