@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'apps.tipoFormato',
     'apps.user',
     'apps.versiones',
+    'apps.tipo_documento',
+    'apps.tipo_servicios',
 ]
 
 MIDDLEWARE = [
