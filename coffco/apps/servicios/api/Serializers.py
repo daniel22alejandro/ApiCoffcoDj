@@ -1,8 +1,8 @@
 from rest_framework.serializers import  ModelSerializer
-from apps.servicios.models import Servicio
+from apps.servicios.models import ServicioModels
 
 class ServicioSerializers(ModelSerializer):
     class Meta:
-        model = Servicio
+        model = ServicioModels
         fields = ['nombre_servicio','versiones', 'muestra']
 

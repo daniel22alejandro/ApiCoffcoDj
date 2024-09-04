@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DatosConfig(AppConfig):
+class RolConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.datos'
+    name = 'apps.rol'
