@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     "corsheaders",
     'rest_framework_simplejwt',
     'drf_yasg',
-    'apps.alquilerLaboratorio',
     'apps.datos',
     'apps.detalle',
     'apps.documentos',
@@ -50,11 +49,12 @@ INSTALLED_APPS = [
     'apps.muestra',
     'apps.municipio',
     'apps.servicios',
-    'apps.tipoFormato',
     'apps.user',
     'apps.versiones',
     'apps.tipo_documento',
     'apps.tipo_servicios',
+    'apps.variables',
+
 ]
 
 MIDDLEWARE = [
@@ -102,7 +102,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'coffco_django',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '3306',
     }

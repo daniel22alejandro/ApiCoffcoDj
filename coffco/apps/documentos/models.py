@@ -9,7 +9,7 @@ class Documento(models.Model):
     nombre = models.CharField(max_length=100)
     fecha_carga = models.DateField(null=True)
     descripcion = models.TextField(blank=True, null=True)
-    codigo_documentos = models.CharField(max_length=100, null=True, blank=True)
+    codigo_documento = models.CharField(max_length=100, null=True, blank=True)
 
     descripcion= models.CharField(max_length=200)
     fecha_Emision= models.DateField(null=True)

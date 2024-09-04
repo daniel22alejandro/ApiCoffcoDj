@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TipoformatoConfig(AppConfig):
+class VariablesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.tipoFormato'
+    name = 'apps.variables'

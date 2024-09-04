@@ -8,7 +8,7 @@ class documentosSerializer(ModelSerializer):
                   'fecha_carga',
                     'descripcion',
                     'codigo_documento',
-                    'fecha_emision',
+                    'fecha_Emision',
                     'fk_tipoServicio',
                     'fkTipoDocumentos']
 
