@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'apps.finca',
     'apps.muestra',
     'apps.municipio',
-    'apps.servicios',
     'apps.user',
     'apps.versiones',
     'apps.tipo_documento',
@@ -56,6 +55,11 @@ INSTALLED_APPS = [
     'apps.variables',
     'apps.rol',
     'apps.precios',
+    'apps.ambiente',
+    'apps.servicio',
+    'apps.logos',
+    'apps.logo_documento',
+    'apps.valor',
 
 ]
 
@@ -104,7 +108,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'coffco_django',
         'USER': 'root',
-        'PASSWORD': '123',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }

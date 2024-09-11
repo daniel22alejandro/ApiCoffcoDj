@@ -6,8 +6,8 @@ class documentosSerializer(ModelSerializer):
         model = Documento
         fields = ['nombre',
                   'fecha_carga',
+                  'codigo_documento',
                     'descripcion',
-                    'codigo_documento',
                     'fecha_Emision',
                     'fk_tipoServicio',
                     'fkTipoDocumentos']
