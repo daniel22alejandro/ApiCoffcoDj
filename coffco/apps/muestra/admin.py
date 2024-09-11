@@ -1,6 +1,6 @@
 from django.contrib import admin
-from apps.muestra.models import Muestra
+from .models import Muestra
 
-admin.site.register(Muestra)
-
-# Register your models here.
+@admin.register(Muestra)
+class MuestraAdmin(admin.ModelAdmin):
+    list_display = ['cantidad', 'finca', 'usuario', 'codigo', 'fecha']

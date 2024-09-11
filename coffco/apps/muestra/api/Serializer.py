@@ -4,5 +4,5 @@ from apps.muestra.models import Muestra
 class MuestraSerializer(ModelSerializer):
     class Meta:
         model = Muestra
-        fields = ['cantidad','finca', 'fecha']
+        fields = ['cantidad','finca', 'usuario','codigo','fecha']
 

@@ -1,3 +1,6 @@
 from django.contrib import admin
-from apps.municipio.models import Municipio
-admin.site.register(Municipio)
+from .models import Municipio
+
+@admin.register(Municipio)
+class MunicipioAdmin(admin.ModelAdmin):
+    list_display = ['nombre_municipio'] 
