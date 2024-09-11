@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import RolModels
 
-# Register your models here.
+@admin.register(RolModels)
+class RolModelsAdmin(admin.ModelAdmin):
+    list_display = ['rol']
+

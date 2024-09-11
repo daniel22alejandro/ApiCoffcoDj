@@ -1,5 +1,5 @@
 from django.db import models
-from apps.servicios.models import ServicioModels
+from apps.servicio.models import Servicio
 from apps.tipo_servicios.models import TipoServicio
 from django.db.models import SET_NULL
 class PreciosModels(models.Model):
@@ -13,6 +13,6 @@ class PreciosModels(models.Model):
         decimal_places=2 
     )
     tipoServicio=models.ForeignKey(TipoServicio,on_delete=SET_NULL,null=True,blank=True)
-    servicio=models.ForeignKey(ServicioModels,on_delete=SET_NULL,null=True,blank=True)
+    servicio=models.ForeignKey(Servicio,on_delete=SET_NULL,null=True,blank=True)
     estado= models.CharField(max_length=30, choices=ESTADO_CHOICES, default='activo')
     

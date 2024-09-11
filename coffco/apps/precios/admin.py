@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import PreciosModels
 
-# Register your models here.
+@admin.register(PreciosModels)
+class PreciosModelsAdmin(admin.ModelAdmin):
+    list_display = ['presentacion', 'precio', 'tipoServicio', 'servicio', 'estado']

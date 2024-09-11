@@ -4,5 +4,5 @@ from apps.municipio.models import Municipio
 class MunicipioSerializer(ModelSerializer):
     class Meta:
         model = Municipio
-        fields = ['nombre']
+        fields = ['nombre_municipio']
 
