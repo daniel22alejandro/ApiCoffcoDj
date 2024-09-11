@@ -1,6 +1,8 @@
 from django.db import models
 from django.db.models import SET_NULL
 from apps.documentos.models import Documento
+
+
 class Versione(models.Model):
     version = models.CharField(max_length=100)
     documento=models.ForeignKey(Documento,on_delete=SET_NULL,null=True,blank=True)

@@ -1,5 +1,6 @@
 from django.contrib import admin
-from apps.finca.models import Finca
+from .models import Finca
 
-admin.site.register(Finca)
-
+@admin.register(Finca)
+class FincaAdmin(admin.ModelAdmin):
+    list_display = ['nombre', 'municipio']

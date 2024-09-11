@@ -1,5 +1,5 @@
 from django.urls import path,include
-from apps.documentos.api.Views import documetoViewsets
+from apps.muestra.api.View import MuestraViewSet
 from rest_framework import routers
 routerMuestra = routers.DefaultRouter()
-routerMuestra.register(prefix='mustra',basename='muestra',viewset=documetoViewsets)
+routerMuestra.register(prefix='muestra',basename='muestra',viewset=MuestraViewSet)
