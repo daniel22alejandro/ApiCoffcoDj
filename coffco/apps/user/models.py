@@ -23,4 +23,5 @@ class User(AbstractUser):
     rol= models.CharField(max_length=21, choices=enumRol, null=False,verbose_name='Rol') 
     USERNAME_FIELD="numero_documento"
     REQUIRED_FIELDS=[]
-    
+    def __str__(self):
+        return self.numero_documento
